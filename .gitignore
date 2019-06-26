@@ -1,0 +1,17 @@
+*
+
+!*/
+!*.c
+!*.cpp
+!*.h
+!*.rb
+!*.py
+!*.md
+!Makefile
+!.gitignore
+!*.png
+!*.jpg
+!*.jpeg
+!*.bmp
+!*.pdf
+
