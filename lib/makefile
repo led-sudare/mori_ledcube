@@ -1,7 +1,7 @@
 CXX			:= g++
 CXXFLAGS	:= -Wall -std=c++17 -O2 -fPIC
 
-TARGET		:=  lib3dled.so
+TARGET		:=  libled.so
 HEADER		:= led.h
 PROJ_ROOT	:= $(realpath .)
 SRCS		:= $(wildcard *.cpp)

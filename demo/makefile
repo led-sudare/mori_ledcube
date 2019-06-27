@@ -5,7 +5,7 @@ TARGET		:= demo
 PROJ_ROOT	:= $(realpath .)
 INCLUDES	:= 
 SRCS		:= main.cpp
-LIBS		:= -l3dled
+LIBS		:= -lled
 OBJS		:= $(SRCS:.cpp=.o)
 
 ### Rules ######################################################################
