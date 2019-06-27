@@ -28,8 +28,8 @@ clean:
 
 .PHONY: install
 install:
-	install $(TARGET) /usr/local/lib
-	install $(HEADER) /usr/local/include
+	install $(TARGET) /usr/local/lib/
+	install $(HEADER) /usr/local/include/
 
 .PHONY: uninstall
 uninstall:

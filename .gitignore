@@ -15,3 +15,5 @@
 !*.bmp
 !*.pdf
 
+!*Dockerfile*
+!*.dockerignore
