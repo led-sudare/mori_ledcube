@@ -1,11 +1,11 @@
 CXX			:= g++
 CXXFLAGS	:= -Wall -std=c++11
 
-TARGET		:= show_pics
+TARGET		:= demo
 PROJ_ROOT	:= $(realpath .)
-INCLUDES	:= `pkg-config opencv --cflags`
+INCLUDES	:= 
 SRCS		:= main.cpp
-LIBS		:= `pkg-config opencv --libs` -lm -lstick
+LIBS		:= -l3dled
 OBJS		:= $(SRCS:.cpp=.o)
 
 ### Rules ######################################################################
