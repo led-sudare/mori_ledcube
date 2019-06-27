@@ -1,11 +1,12 @@
-CXX			:= gcc
-CXXFLAGS	:= -Wall -std=c99 -fPIC
+CXX			:= g++
+CXXFLAGS	:= -Wall -std=c++17 -O2 -fPIC
 
-TARGET		:= libstick.so
-HEADER		:= stick.h
+TARGET		:=  lib3dled.so
+HEADER		:= led.h
 PROJ_ROOT	:= $(realpath .)
-SRCS		:= stick.c spi.c i2c.c gpio.c
-OBJS		:= $(SRCS:.c=.o)
+SRCS		:= $(wildcard *.cpp)
+OBJS		:= $(SRCS:.cpp=.o)
+LIBS		:= 
 
 ### Rules ######################################################################
 
@@ -16,7 +17,7 @@ all: $(TARGET)
 make: $(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CXX) -shared -o $@ $(OBJS)
+	$(CXX) -shared -o $@ $(OBJS) $(LIBS)
 
 .PHONY: clean
 clean:
