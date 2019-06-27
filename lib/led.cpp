@@ -1,5 +1,7 @@
 #include "led.h"
+#ifdef __APPLE_CC__
 #include <arpa/inet.h>
+#endif  // __APPLE_CC__
 #include <errno.h>
 #include <netinet/in.h>
 #include <string.h>
