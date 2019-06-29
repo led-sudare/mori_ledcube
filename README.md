@@ -27,7 +27,7 @@ $ ./demo 1.2.3.4 5678
 
 2. Build
     ```sh
-    $ docker image build --no-cache -t mori:alpine ip=1.2.3.4 port=5678 .
+    $ docker image build --no-cache -t mori:alpine --build-arg ip=1.2.3.4 --build-arg port=5678 .
 
     $ docker image ls
     REPOSITORY          TAG                  IMAGE ID            CREATED             SIZE
@@ -36,12 +36,12 @@ $ ./demo 1.2.3.4 5678
 
     Change ip:port
     ```sh
-    $ docker image build -t mori:alpine ip=1.2.3.4 port=5678 .
+    $ docker image build -t mori:alpine --build-arg ip=1.2.3.4 --build-arg port=5678 .
     $ docker image prune
     ```
 
 3. Run
     ```sh
-    $ docker container run --rm mori:alpine
+    $ docker container run -d --rm --name mori-san mori:alpine
     ```
 
